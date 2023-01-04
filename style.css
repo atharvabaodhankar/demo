@@ -43,6 +43,7 @@ nav ul{
     left: -100%;
     height: 100vh;
     width: 300px;
+    z-index: 100;
 }
 .logo{
     margin-left: 4rem;
@@ -126,7 +127,7 @@ nav ul li a:hover::after{
 #hero{
     display: grid;
     padding: 8rem 2rem;
-    grid-template-rows: 350px 380px ;
+    grid-template-rows: 380px 380px ;
     grid-template-columns: 32.5% 32.5% 32.5% ;
     gap: 2rem;
     grid-template-areas: 
@@ -137,34 +138,167 @@ nav ul li a:hover::after{
 
 .hero-blue{
     grid-area: hero-blue;
-    background-color: var(--blue-l);
+    background-color: #b6dcff;
     border-radius: 1.5rem;
 }
 .hero-green{
     grid-area: hero-green;
-    background-color: var(--green-l);
+    background-color: #ceffe4;
     border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 .hero-red{
     grid-area: hero-red;
-    background-color: var(--red-l);
+    background-color: #f7bbbbd1;
     border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero-green i , .hero-green h1 , .hero-green p{
+    color: var(--green);
+}
+.hero-red i , .hero-red h1 , .hero-red p{
+    color: var(--red);
+}
+
+.hero-yellow i , .hero-yellow h1 , .hero-yellow p{
+    color: var(--yellow);
+}
+.hero-violet i , .hero-violet h1 , .hero-violet p{
+    color: var(--violet);
+}
+.hero-box i{
+    font-size: 7rem;
+}
+.hero-box{
+    padding: 0 2.5rem;
+    text-align: center;
+}
+.hero-box h1{
+    font-size: 2.7rem;
+    margin: 2.5rem;
+}
+.hero-box p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-size: 400;
+    text-align: center;
+    line-height: 2.5rem;
 }
 .hero-yellow{
     grid-area: hero-yellow;
-    background-color: var(--yellow-l);
+    background-color: #ffeccf;
     border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero-yellow i{
+    background-color: var(--yellow);
+    color:  #ffeccf ;
+    padding: 1.4rem 1.7rem;
+    border-radius: 2rem;
 }
 .hero-violet{
     grid-area: hero-violet;
-    background-color: var(--violet-l);
+    background-color: #d0cff9;
     border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero-blue{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+.hero-blue-desc{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+    padding: 4rem 3rem;
+    width: 60%;
+}
+.hero-blue-desc h1{
+    font-size: 3rem;
+    color: var(--blue);
+}
+.hero-blue-desc p{
+    font-size: 1.6rem;
+    color: #0161bb;
+    line-height: 2.5rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+.hero-blue-desc a{
+    font-size: 2rem;
+    color: #fff;
+    background-color: var(--blue);
+    padding: 1.5rem 6rem;
+    font-weight: 600;
+    border-radius: 3rem;
+    transition: all .3s ease;
+}
+.hero-blue-desc a:hover {
+    background-color: #fff;
+    color: var(--blue);
+}
+.hero-blue-desc a i{
+    margin-right: 1rem;
+}
+
+.hero-blue-img{
+    position: absolute;
+    height: 110%;
+    width: auto;
+    right: 0;
+    top: -11px;
+}
+
+@media screen and (max-width:1200px) {
+    .hero-blue-img {
+        position: absolute;
+        height: 80%;
+        width: auto;
+        top: auto;
+        right: 0;
+        bottom: 0px;
+    }
+}
+@media screen and (max-width:960px) {
+    .hero-blue-img {
+        height: 72%;
+    }
+}
+@media screen and (max-width:750px) {
+
+}
+@media screen and (max-width:800px) {
+
+}
+@media screen and (max-width:800px) {
+
+}
+@media screen and (max-width:800px) {
+
 }
 @media screen and (max-width:800px) {
     #hero{
         display: grid;
         padding: 8rem 2rem;
-        grid-template-rows: 350px 380px 380px 380px 380px ;
+        grid-template-rows: 650px 380px 380px 380px 380px ;
         grid-template-columns: 100% ;
         gap: 2rem;
         grid-template-areas: 
@@ -173,5 +307,45 @@ nav ul li a:hover::after{
         "hero-red"
         "hero-yellow" 
         "hero-violet";
+    }
+    .hero-blue-img {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50% , 0%);
+    }
+    .hero-blue-img {
+        height: 370px;
+    }
+    .hero-blue-desc {
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width:500px) {
+    .hero-blue-img {
+        height: 285px;
+    }
+    .hero-blue-img {
+        top: 57%;
+    }
+    #hero {
+        grid-template-rows: 590px 380px 380px 380px 380px;
+        padding: 8rem 2.5rem;
+    }
+    .hero-blue-desc {
+        padding: 4rem 2rem;
+    }
+}
+@media screen and (max-width:500px) {
+
+    .hero-blue-desc a {
+        padding: 1.5rem 3rem;
+    }
+    #hero {
+        grid-template-rows: 620px 380px 380px 380px 380px;
     }
 }

@@ -266,7 +266,94 @@ nav ul li a:hover::after{
     right: 0;
     top: -11px;
 }
-
+/* Plan */
+#plan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0;
+    background-color: var(--violet);
+}
+.plan-1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 900px;
+}
+.plan-head{
+    width: 400px;
+}
+.plan-head img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.plan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plan-desc{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    padding: 0 2.5rem;
+    width: 420px;
+    margin-right: 3rem;
+}
+.plan-desc h1{
+    font-size: 3rem;
+    color: #fff;
+}
+.plan-desc p{
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+    color: #fff;
+    margin: 2.5rem 0;
+}
+.plan-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 3rem;
+    background-color: #fff;
+    text-align: center;
+    padding: 2.5rem 2.5rem;
+    transform: translateY(-150px);
+    width: 420px;
+}
+.plan-box img{
+    width: 75%;
+}
+.plan-box h1{
+    font-size: 2.5rem;
+    margin: 3rem 0;
+}
+.plan-box p{
+    font-size: 2rem;
+    color: rgb(55, 55, 55);
+    line-height: 3.5rem ;
+    font-style: italic;
+}
+.plan-box i{
+    font-size: 3rem;
+    background-color: var(--violet-l);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 2.5rem 0;
+    transition: all .3s ease;
+}
+.plan-box a:hover i{
+    transform: translateY(10px);
+}
 @media screen and (max-width:1200px) {
     .hero-blue-img {
         position: absolute;
@@ -281,9 +368,43 @@ nav ul li a:hover::after{
     .hero-blue-img {
         height: 72%;
     }
+    .plan-1 {
+        width: 710px;
+    }
+    .plan-head {
+        width: 330px;
+    }
+    .plan-box {
+        width: 340px;
+    }
+    .plan-desc {
+        width: 340px;
+    }
 }
-@media screen and (max-width:750px) {
-
+@media screen and (max-width:780px) {
+    .plan {
+        flex-direction: column;
+    }
+    .plan-box {
+        transform: translateY(0);
+        width: 420px;
+    }
+    .plan-1 {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .plan-head {
+        width: 420px;
+    }
+    .plan-desc {
+        width: 90%;
+        margin-right: 0;
+        margin: 3rem 0;
+    }
+    .plan-desc h1 {
+        font-size: 5rem;
+    }
 }
 @media screen and (max-width:800px) {
 
@@ -323,6 +444,24 @@ nav ul li a:hover::after{
         height: 100%;
         width: 100%;
         text-align: center;
+    }
+}
+@media screen and (max-width:550px) {
+    .plan-head {
+        width: 90%;
+    }
+    .plan-desc{
+        padding: 0;
+    }
+    .plan-desc h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .plan-box {
+        width: 85%;
+    }
+    .plan-box img {
+        width: 100%;
     }
 }
 @media screen and (max-width:500px) {

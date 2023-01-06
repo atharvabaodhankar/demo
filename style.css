@@ -354,6 +354,101 @@ nav ul li a:hover::after{
 .plan-box a:hover i{
     transform: translateY(10px);
 }
+/* Testimonials */
+#testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0;
+}
+.testimonials-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2.5rem;
+    width: 780px;
+    margin-bottom: 5rem;
+}
+.testimonials-header h2{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.testimonials-header h1{
+    font-size: 4.5rem;
+    margin: 2rem 0;
+    color: var(--violet);
+}
+.testimonials-header p{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 300;
+}
+.testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.testimonials-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 4rem;
+    background-color: var(--red-l);
+    border-radius: 2rem;
+    margin: 2rem 0;
+}
+.testimonials-box:nth-child(2){
+    background-color: var(--yellow-l);
+}
+.testimonials-box:nth-child(3){
+    background-color: var(--green-l);
+}
+.testimonials-box-img{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    margin-right: 4rem;
+}
+.testimonials-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonials-box-desc{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    width: 600px;
+}
+.testimonials-box-desc p{
+    font-size: 2rem;
+    line-height: 4rem;
+    color: #4d4d4d ;
+}
+.testimonials-box-desc p i{
+    margin-right: 1rem;
+    font-size: 2.5rem;
+    color: #000;
+}
+.testimonials-box-desc p i:last-child{
+    transform: rotateX(180deg);
+    margin-left: 1rem;
+}
+.testimonials-box-desc h1{
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 @media screen and (max-width:1200px) {
     .hero-blue-img {
         position: absolute;
@@ -380,6 +475,13 @@ nav ul li a:hover::after{
     .plan-desc {
         width: 340px;
     }
+    .testimonials-box-desc {
+        width: 320px;
+    }
+    .testimonials-header {
+        padding: 0 2.5rem;
+        width: 95%;
+    }
 }
 @media screen and (max-width:780px) {
     .plan {
@@ -404,6 +506,20 @@ nav ul li a:hover::after{
     }
     .plan-desc h1 {
         font-size: 5rem;
+    }
+    .testimonials-box {
+        flex-direction: column;
+        width: 80%;
+    }
+    .testimonials-box-img {
+        margin-right: 0;
+    }
+    .testimonials-box-desc{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 2rem;
     }
 }
 @media screen and (max-width:800px) {
@@ -463,6 +579,9 @@ nav ul li a:hover::after{
     .plan-box img {
         width: 100%;
     }
+    .testimonials-header h1 {
+        font-size: 3.5rem;
+    }
 }
 @media screen and (max-width:500px) {
     .hero-blue-img {
@@ -478,6 +597,13 @@ nav ul li a:hover::after{
     .hero-blue-desc {
         padding: 4rem 2rem;
     }
+    .testimonials-box {
+        flex-direction: column;
+        width: 90%;
+    }
+    .testimonials-box {
+        padding: 4rem 2rem;
+    }
 }
 @media screen and (max-width:500px) {
 
@@ -486,5 +612,8 @@ nav ul li a:hover::after{
     }
     #hero {
         grid-template-rows: 620px 380px 380px 380px 380px;
+    }
+    .testimonials-header h1 {
+        font-size: 3rem;
     }
 }

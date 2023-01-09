@@ -24,10 +24,10 @@
                 <div class="close-bar"></div>
                 <div class="close-bar"></div>
             </div>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Other</a></li>
-            <li><a href="#">AboutUs</a></li>
-            <li><a href="#">ContactUs</a></li>
+            <li><a class="btns" href="#hero">Home</a></li>
+            <li><a class="btns" href="#plan">Other</a></li>
+            <li><a class="btns" href="#about">AboutUs</a></li>
+            <li><a class="btns" href="#start">ContactUs</a></li>
         </ul>
         <div class="hamburger">
             <div class="hambar"></div>
@@ -192,17 +192,36 @@
         <a href="#"><i class="fa-brands fa-linkedin-in"></i><h1> Find me on LinkedIn</h1></a>
     </div>
     </section>
+    <section id="start">
+        <div class="start">
+            <h3>GET STARTED</h3>
+            <h2>Simple, Transparent Pricing</h2>
+            <h1>It's Free!</h1>
+            <p>W're still in beta and we will be for awhile. As we add more functionality, we'll look into other plans with more controls.
+            </p>
+            <a href="#">Get Started</a>
+            <span>Copyright 2023 © <a href="https://github.com/atharvabaodhankar/">Atharva Baodhankar</a></span>
+        </div>
+    </section>
+    <section id="footer">
+        <p>This page is Made By <a href="https://github.com/atharvabaodhankar/">@AtharvaBaodhnkar</a>All the material and imgs are subject to © Copyright , ContactUs If you want to Purchase !</p>
+        <span>Created With ❤️ By <a href="https://github.com/atharvabaodhankar/">Atharva</a> </span>
+    </section>
 
     <script>
         var navBar = document.querySelector('nav');
         var hamburger = document.querySelector('.hamburger');
         var close = document.querySelector('.close');
+        let btns = document.querySelectorAll('.btns');
 
         hamburger.addEventListener('click' , ()=>{
             navBar.classList.toggle("active");
             
         })
         close.addEventListener('click' , ()=>{
+            navBar.classList.remove("active");
+        })
+        btns.addEventListener("click" , ()=>{
             navBar.classList.remove("active");
         })
     </script>

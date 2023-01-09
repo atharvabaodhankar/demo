@@ -18,9 +18,11 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 nav{
     display: flex;
@@ -594,7 +596,93 @@ nav ul li a:hover::after{
     font-size: 1.3rem;
     margin-right: 1rem;
 }
-
+/* Start */
+#start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--violet);
+    padding: 7rem 0;
+}
+.start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 3rem;
+}
+.start h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #f0f0f0;
+    letter-spacing: 2px;
+}
+.start h2{
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 4rem;
+    color: #fff;
+    margin: 3rem 0;
+}
+.start h1{
+    font-size: 10rem ;
+    color: var(--yellow);
+    margin-bottom: 3rem;
+}
+.start p{
+    font-size: 1.9rem;
+    line-height: 3rem;
+    color: #f0f0f0;
+}
+.start > a{
+    font-size: 2rem;
+    background-color: #f0f0f0;
+    color: var(--violet);
+    padding: 1.5rem 3rem;
+    font-weight: 600;
+    border-radius: 3rem;
+    transition: all .3s ease;
+    margin: 2rem 0;
+}
+.start > a:hover{
+    background-color: rgb(215, 215, 215);
+}
+.start span{
+    font-size: 1.6rem;
+    color: #fff;
+}
+.start span a{
+    color: var(--yellow);
+    text-decoration: underline;
+}
+/* Footer */
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 3rem;
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+}
+#footer p{
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+#footer p a{
+    color: var(--yellow);
+    text-decoration: underline;
+    padding: .5rem 1rem;
+}
+#footer span a{
+    color: var(--yellow);
+}
+#footer span{
+    font-size: 2rem;
+    margin: 3rem 0;
+}
 @media screen and (max-width:1200px) {
     .hero-blue-img {
         position: absolute;
@@ -774,6 +862,15 @@ nav ul li a:hover::after{
     }
     .working-box {
         width: 85%;
+    }
+    .start h1 {
+        font-size: 5rem;
+    }
+    .start h2 {
+        font-size: 2.5rem;
+    }
+    .start > a{
+        margin: 3rem 0;
     }
 }
 @media screen and (max-width:500px) {
